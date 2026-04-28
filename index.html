@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ade's Website</title>
+
+    <!-- This line is VERY IMPORTANT for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero {
+            height: 250px;
+            background-image: url("https://picsum.photos/800/300");
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        /* 🔥 MOBILE FIX */
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+    </div>
+
+    <div class="hero" id="home">
+        <h1>I build websites for businesses</h1>
+    </div>
+
+    <div class="section" id="about">
+        <h1>About Me</h1>
+        <p>I build websites and I am improving every day.</p>
+    </div>
+
+    <div class="section" id="services">
+        <h1>My Services</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Website Design</h3>
+                <p>I create beautiful websites</p>
+            </div>
+
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>I build responsive pages</p>
+            </div>
+
+            <div class="card">
+                <h3>UI Design</h3>
+                <p>I design clean interfaces</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
